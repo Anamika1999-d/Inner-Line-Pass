@@ -1,0 +1,75 @@
+.checkstatuspage{
+    background: rgb(253, 229, 193);
+     margin:8px 5rem 45px  5rem; 
+    padding: 0;
+}
+.navbardata{
+    background: rgb(243, 243, 243);
+    padding: 10px;
+    display: flex;
+}
+.lastvisit{
+    padding: 0 0 0 800px;
+    text-align: left;
+    color: crimson;
+
+}
+.checkpage{
+    display: flex;
+    padding: 0;
+    margin: 0 ;
+    border: 0;
+}
+.leftsidebar{
+    background: burlywood;
+    
+}
+.rightsidebar{
+    background: rgb(252, 248, 210);
+    margin: 0;
+    padding: 40px 14rem 10px 10px;
+    width: 100%;
+}
+
+.col{
+    text-decoration: none;
+    color: rgb(223, 207, 187);
+    font-size: 30px;
+    text-align: center;
+}
+.Application{
+    background: rgb(29, 172, 238);
+    padding: 5rem 12px 5rem 12px ;
+    
+
+}
+.checkstatus{
+    background: rgb(53, 79, 224);
+    padding: 5rem 12px 5rem 12px ;
+    
+}
+.Download{
+    background: rgb(86, 10, 136);
+    padding: 5rem 12px 5rem 12px ;
+
+} 
+.tableform{
+    text-align: left;
+    background: rgb(20, 13, 78);
+}
+/* th{
+    background: rgb(217, 217, 218);
+}
+td{
+    background: rgb(217, 217, 218);
+} */
+.rightsidebar-status{
+    margin: 20px ;
+    font-size: 20px;
+    color: rgb(92, 15, 38);
+    width: 100%;
+}
+.status-table{
+    background: rgb(255, 221, 189);
+    
+}

@@ -1,0 +1,101 @@
+*{
+    margin:0 ;
+    padding: 0;
+
+}
+
+.home_page{
+    background-image: linear-gradient(to top, #f7fbf5, #dff2ea, #c4e9ea, #b3dcf0, #b4ccf2);
+    margin: 1rem 15rem 4rem 15rem;
+    padding: 0 0px 15px 0px;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: #0f3e6d;
+}
+.navbar__icon{
+    background-image: linear-gradient(to bottom, #0f3e6d, #165387, #275370, #165479, #105577);
+    padding: 3px 6px ;
+    margin: 0;
+    z-index: 999;
+}
+.navbar__item{
+    color: lavender;
+    font-size: 22px;
+}
+.new__application{
+    margin: 4rem 16rem 4rem 16rem;
+    padding:7px 7px ;
+    text-align: center;
+    background: midnightblue;
+    border-radius: 4px;
+    text-decoration: none;
+
+}
+.form{
+    color: rgb(233, 218, 216);
+    text-decoration: none;
+    text-align: center;
+    padding: 4px auto;
+    font-size: 30px;
+}
+.exiting__applicant{
+    background: rgb(235, 230, 230);
+    margin: 4rem 5rem 4rem 5rem;
+    padding:0;
+    border-radius: 5px;
+}
+.navbar{
+    background: rgb(44, 44, 155);
+    padding:8px;
+    margin: 0;
+    color:rgb(233, 218, 216);
+    font-size: 20px;
+}
+.item_applicant{
+    margin: 14px 14px 14px 14px;
+    padding:4px 5px 5px 6px ;
+    text-align: center;
+    display: flex;
+}
+p.user-id{
+    text-align: left;
+    font-size: 22px;
+    padding: 0;
+}
+.btn-search{
+    background-color: rgb(8, 10, 102);
+    border-radius: 4px;
+    margin: 43px 2px 23px 2px;
+    padding: 5px 16px 5px 16px;
+    color: rgb(233, 218, 216);
+    font-size: 18px;
+}
+.login_btn{
+    text-align: center;
+    text-decoration: none;
+    color: seashell;
+    font-size: 16px;
+}
+.new__application:hover{
+    background: rgb(18, 17, 82);
+    transition: all 0.3s ease;
+    transform: scale(1.075);
+}
+.btn-search:hover{
+    background: rgb(18, 17, 82);
+    transition: all 0.3s ease;
+    transform: scale(1.075);
+}
+
+@media screen and (max-width: 960px){
+    .home_page{
+        background-image: linear-gradient(to top, #f7fbf5, #dff2ea, #c4e9ea, #b3dcf0, #b4ccf2);
+        margin: 5px;
+        padding: 0 0px 15px 0px;
+        border-radius: 5px;
+    }
+    .new__application{
+        margin: 4rem 10rem 4rem 10rem;
+        padding:7px 7px ;
+    }
+}

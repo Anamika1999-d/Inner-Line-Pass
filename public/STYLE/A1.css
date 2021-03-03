@@ -1,0 +1,28 @@
+.checkstatupage{
+    background: rgb(253, 229, 193);
+    margin:2rem;
+    padding: 0;
+}
+.navbardata{
+    background: rgb(243, 243, 243);
+}
+.Application{
+    background: blue;
+    margin: 0 63rem 0 0;
+    padding: 5rem 0 5rem 0 ;
+    font-size: 40px;
+    text-align: center;
+    text-transform: none;
+    color: rgb(212, 199, 181);
+    
+}
+.checkstatus{
+    background: rgb(13, 111, 114);
+    margin: 0 63rem 0 0;
+    padding: 5rem;
+}
+.Download{
+    background: rgb(114, 42, 13);
+    margin: 0 63rem 0 0;
+    padding: 5rem;
+}

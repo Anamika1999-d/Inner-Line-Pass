@@ -1,0 +1,33 @@
+h2{
+    padding: 0 20px;
+    font-weight: bold;
+    color: rgb(3, 33, 65);
+    font-style: oblique;
+}
+.table{
+    margin:0 10px 7px 20px;
+    padding: 0px;
+    background: rgb(202, 202, 202);
+}
+.column{
+    background: rgb(51, 49, 49);
+    color: blanchedalmond;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: rgb(10, 11, 95);
+}
+.application_form{
+    margin: 0 14px 18px 14px;
+    background: rgb(207, 206, 206);
+    color: rgb(243, 230, 202);
+}
+.nav_form{
+    background: darkkhaki;
+}
+table{
+
+    font-size: 17px;
+}
+

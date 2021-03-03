@@ -1,0 +1,74 @@
+body{
+    margin:0;
+    padding:0;
+}
+.bars {
+    display:flex;
+}
+.bar{
+    margin:0 2px;
+    padding:50px 0 60px 0;
+    text-align:center;
+    background:rgb(250, 171, 0);
+    
+    color: rgb(78, 29, 78);
+    font-size: 17px;
+    height:50px;
+    width: 500px;
+}
+.ticks{
+    display:flex;
+}
+.tick{
+    padding:0 ;
+    width: 500px;
+    margin:0;
+    size:20px;
+    text-align:center;
+}
+.checkpage{
+    display:flex;
+    background-color: darkgray;
+}
+.downloadsection{
+    padding:10px;
+    background:rgb(15, 34, 97);;
+    color: rgb(178, 215, 221);
+    font-size: 20px;
+
+}
+i{
+    margin:0;
+    padding:0;
+    color:green;
+    font-size:50px;
+}
+.form{
+    margin:2px;
+    background:rgb(253, 229, 193);;
+    width:100%;
+
+}
+h2{
+   color: rgb(150, 234, 240);
+   background-color: rgb(10, 10, 54);
+   margin: 9px 0 0 0;
+   
+}
+fieldset{
+    background-color: darkcyan;
+    margin: 4px;
+    font-size: 17px;
+    color: cornsilk;
+    padding: 9px;
+    
+}
+legend{
+    background-color: rgb(13, 13, 121);
+    color: rgb(130, 216, 219);
+    width: 30%;
+    text-align: center;
+}
+.details{
+    width: 100%;
+}

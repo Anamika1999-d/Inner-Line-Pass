@@ -1,0 +1,26 @@
+.remarks_page{
+    margin:8px 15rem 4rem 15rem;
+    background-image: linear-gradient(to top, #051327, #002853, #003d84, #0052b7, #1267eb);
+}
+.navbar_remarks{
+    background: rgb(13, 13, 46);
+    color: #fff;
+}
+textarea{
+    margin: 6px;
+    padding: 5px 6px 7px 5px;
+    width: 80%;
+    background-color: rgb(200, 218, 252);
+}
+#Submit{
+    background-color: rgb(248, 244, 7);
+    margin: 10px;
+    padding: 5px 12px;
+    border-radius: 3px;
+    font-size: 18px;
+}
+#Submit:hover{
+    background-color: rgb(250, 175, 12);
+    transition: all 0.3s ease;
+    transform: scale(1.075);
+}
