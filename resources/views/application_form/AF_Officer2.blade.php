@@ -263,13 +263,13 @@
             </tr>
             <tr>
                 <th>EPIC/UID No. of Sponsor :</th>
-                <td><button href="/storage/public/documents/{{$application_forms->Doc1}}" target="_blank" class="btn btn-primary">Click here to view</button>
-                <button href="/download1/{{$application_forms->id}}" class="btn btn-success">Download Here</button></td>
+                <td><button class="btn btn-primary"><a href="/storage/public/documents/{{$application_forms->doc1}}"target="_blank"> Click here to view</a></button>
+                <button  class="btn btn-success"> <a href="/download1/{{$application_forms->id}}"> Download Here</a></button></td>
             </tr>
             <tr>
                 <th>Provisional Pass No:</th>
-                <td><button href="/storage/public/documents/{{$application_forms->Doc2}}" target="_blank" class="btn btn-primary">Click here to view</button>
-                 <button href="/download2/{{$application_forms->id}}" class="btn btn-success">Download Here</button></td>
+                <td><button href="/storage/public/documents/{{$application_forms->doc2}}" target="_blank" class="btn btn-primary"><a href="/storage/public/documents/{{$application_forms->doc2}}" target="_blank">Click here to view</a></button>
+                 <button class="btn btn-success"><a href="/download2/{{$application_forms->id}}"> Download Here</a></button></td>
             </tr>
             <tr>
                 <th> Due date for decision on Application :</th>

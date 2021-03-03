@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use App\ApplicationForm;
 use Illuminate\Http\Request;
 
@@ -9,9 +9,12 @@ class CheckController extends Controller
 {
     public function search(){
         $search=$_GET['Search'];
+        $application_forms=ApplicationForm::where('Application_No','LIKE',$search)->first();
+        if($application_forms){
+            return view('checkurStatus',['data'=>$application_forms]);
+        }
+        return redirect('/Homepage')->with('message', 'Enter the valid Application No');
         
-        $application_forms=ApplicationForm::where('Application_No','LIKE','%'.$search.'%')->first();
-        return view('checkurStatus',['data'=>$application_forms]);
     }
     public function check(){
         $d1=$_GET['Email'];
@@ -23,8 +26,15 @@ class CheckController extends Controller
         if($application_forms){
             return view('checkurStatus',['data'=>$application_forms]);
         }
-        else{
-            return redirect('/index');
-        }
+            return redirect('/index')->with('message', 'Enter the valid Application No');
+    }
+    public function show(){
+        $data=$_GET['name'];
+        $application_forms=ApplicationForm::where([
+            ['Applicant_Name','LIKE','%'.$data.'%'],
+            ['DigitalSign','=','Signed']
+            ])->get();
+        
+        return view('application_form/List',['data'=>$application_forms]);
     }
 }

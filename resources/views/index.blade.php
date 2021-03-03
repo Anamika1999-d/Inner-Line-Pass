@@ -162,6 +162,9 @@ img {
              <input type="text" placeholder="Email" name="Email"class="search">
              <input type="text" placeholder="Application No." name="ApplicationNo"class="search">
              <button type="Submit" class="btn btn-secondary btn-lg">Search</button>
+             @if(Session::has('message'))
+                <p class="alert alert-danger">{{ Session::get('message') }}</p>
+             @endif
         </form>
       </div>
       <div class="index">

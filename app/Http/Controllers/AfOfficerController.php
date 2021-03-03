@@ -88,23 +88,33 @@ class AfOfficerController extends Controller
     }
     public function mypdf($id){
         $status = ApplicationForm:: find($id);
-        $status->ILP_Downloaded='downloaded';
-        
         $status->save();
-        $passno=$status->Pass_No;
-        //dd ($passno);
+        $passno="CERTI".$status->Pass_No;
         $pdf = PDF::loadView('certificate.ilp',compact('status','passno'));
         $fileName ="";
         try{
-            $fileName = $status->Application_No;
+            $fileName = $status->Pass_No;
         }
         catch(Exception $e)
         {
             $fileName = 'myInfo';
         }
-        //  
-        
-         return $pdf->stream();
-        //  return $pdf->download($fileName.'.pdf');
+         return $pdf->download($fileName.'.pdf');
+    }
+    public function mypdf1($id){
+        $status = ApplicationForm:: find($id);
+        $status->ILP_Downloaded='downloaded';
+        $status->save();
+        $passno="CERTI".$status->Pass_No;
+        $pdf = PDF::loadView('certificate.ilp',compact('status','passno'));
+        $fileName ="";
+        try{
+            $fileName = $status->Pass_No;
+        }
+        catch(Exception $e)
+        {
+            $fileName = 'myInfo';
+        }
+         return $pdf->download($fileName.'.pdf');
     }
 }

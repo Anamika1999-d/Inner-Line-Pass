@@ -32,15 +32,18 @@ Route::get('/Homepage', function () {
     return view('application_form/Homepage');
 })->middleware('auth','check_CSC');
 
+Route::get('/LIST', 'ApplicationFormController@show')->middleware('auth','check_CSC');
 Route::get('/Homepage/ApplicationForm', 'ApplicationFormController@index')->middleware('auth','check_CSC');
+Route::get('/ApplicationDetails/{id}', 'ApplicationFormController@display')->middleware('auth','check_CSC');
+Route::get('/view', 'CheckController@show')->middleware('auth','check_CSC');
 Route::post('/Homepage', 'ApplicationFormController@Store')->middleware('auth','check_CSC');
 
 ///////////////////////////////////////////////////////////////
 //for forworder
 Route::get('/Home_page', 'AfForwarderController@index')->middleware('auth','check_F');
 Route::get('/Detail/{id}', 'AfForwarderController@show')->middleware('auth','check_F');
-Route::get('/download1/{id}', 'AfForwarderController@download1')->middleware('auth','check_F');
-Route::get('/download2/{id}', 'AfForwarderController@download2')->middleware('auth','check_F');
+Route::get('/download1/{id}', 'AfForwarderController@download1');
+Route::get('/download2/{id}', 'AfForwarderController@download2');
 Route::post('/remarks/{id}', 'AfForwarderController@update')->middleware('auth','check_F');
 Route::post('/Details/{id}', 'AfForwarderController@update1')->middleware('auth','check_F');
 
@@ -61,6 +64,7 @@ Route::get('/check', 'CheckController@check');
 //certificate
 Route::get('/page/{id}','ApplicationFormController@mypdf' );
 Route::get('/ilp/{id}', 'AfOfficerController@mypdf');
+Route::get('/ilp1/{id}', 'AfOfficerController@mypdf1');
 ////////////////////////////////////////
 //sms
 route::get ('/sms','SMSController@Firstsms');

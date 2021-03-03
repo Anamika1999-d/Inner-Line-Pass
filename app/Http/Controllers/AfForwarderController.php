@@ -30,7 +30,7 @@ class AfForwarderController extends Controller
     }
     public function download1($id){
         $application_forms= ApplicationForm::find($id);
-        $filename = $application_forms->Doc1;
+        $filename = $application_forms->doc1;
         //dd($filename);
         $file_path =public_path()."/storage/public/documents/".$filename;
         //for download
@@ -47,7 +47,7 @@ class AfForwarderController extends Controller
     }
     public function download2($id){
         $application_forms= ApplicationForm::find($id);
-        $filename = $application_forms->Doc2;
+        $filename = $application_forms->doc2;
         //dd($filename);
         $file_path =public_path()."/storage/public/documents/".$filename;
         //for download

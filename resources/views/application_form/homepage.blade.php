@@ -16,6 +16,9 @@
         <div class="new__application">
             <h3> <a href="/Homepage/ApplicationForm" class="form">New Applicant</a></h3>
         </div>
+        <div class="new__application">
+            <h3> <a href="/LIST" class="form">Already issued Inner Line Pass</a></h3>
+        </div>
         <div class="exiting__applicant">
             <div class="nav__userid">
                 <div class="navbar">Existing Applicant</div>
@@ -27,11 +30,17 @@
                             <span class="input-group-prepend">
                                 <button type="submit" class="btn-search" >Search <i class="fas fa-search"></i></button>
                             </span>
+                            
+                            
                         </div>
+                        @if(Session::has('message'))
+                            <p class="alert alert-danger">{{ Session::get('message') }}</p>
+                        @endif
                     </form>
                 </div>
             </div>
         </div> 
+        
     </div>
 </div>
 <footer>

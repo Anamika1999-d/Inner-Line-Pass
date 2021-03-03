@@ -16,11 +16,21 @@ class ApplicationFormController extends Controller
     public function index(){
         return view('application_form/ApplicationForm');
     }
+    public function show(){
+        $data= ApplicationForm::where([
+            ['DigitalSign','=','Signed'],
+        ])->get();
+        return view('application_form/List',compact('data'));
+    }
+    public function display($id){
+        $data = ApplicationForm::find($id);
+        return view('application_form/ApplicantDetail',compact('data'));
 
+    }
 
     public function store(Request $request){
         $request->validate([
-            'Email' => 'unique:posts',
+            'Email' => 'unique:application_forms',
         ]);
         $application_forms= new ApplicationForm();
         $application_forms->Application_No="APPLI0".time();

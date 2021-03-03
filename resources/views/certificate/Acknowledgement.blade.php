@@ -15,6 +15,8 @@
     <p class> This is to acknowledge the receipt <b><u> InnerLinePass(Regular)</u></b> with Application No. <b><u>{{$application_forms->Application_No}}</u></b> date on<b> <u>{{$application_forms->Application_date}}</u></b> to the <b><u> BDO</u> </b> has been <b><u> SUBMITTED </u></b></p>
     <b>Place: Aizawl </b><br>
     <b>Date: {{$application_forms->updated_at}}</b><br>
+    <br>
+    <br>
      ACCEPTED <br>
     Authority Signature
     
@@ -23,5 +25,27 @@
 </div>
 </body>
 </html>
+<style>
+    .DownloadBtn{
+        background:blue;
+        padding:4px 7px ;
+        margin:7px ;
+        font-size:17px;
+        
+        border-radius:4px;
+    }
+    a{
+        text-decoration:none;
+        color:#fff;
+    }
+    .homeBtn{
+        background:green;
+        padding:4px 7px ;
+        margin:7px ;
+        font-size:17px;
+        
+        border-radius:4px;
+    }
+</style>
 <button><a href="/page/{{$application_forms->id}}"> Download</a></button>
 <button><a href="/Homepage"> Back To Home page</a></button>

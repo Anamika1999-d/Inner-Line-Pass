@@ -51,7 +51,7 @@
                 <p class="address">Personal Detail :--</p>
                 <li>Application date : <input type="date" name="Application_date" placeholder="Application date" required></li>
                 <li>Applicant Name*: <input type="text" name="Applicant_Name"placeholder="Applicant Name" required></li>
-                <li>EPIC / UID No.* : <input type="number" name="EPIC_UID_No" placeholder=""></li>
+                <li>EPIC / UID No.* : <input type="text" name="EPIC_UID_No" placeholder=""></li>
                 <li>Date of Birth* : <input type="date" name="DOB" placeholder="Date of Birth"></li>
                 <li>Gender* :
                     <select name="gender" >
@@ -80,20 +80,20 @@
                         <option value="Doctor">Doctor</option>
                         <option value="Business man">Business man</option>
                         <option value="Farmer">Farmer</option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <option value="Govt Service">Govt Service</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Civil Service">Civil Service</option>
+                        <option value="Pilot">Pilot</option>
+                        <option value="Lawyer">Lawyer</option>
                         <option value="others">others</option>
                     </select>
                 </li>
                 <li>Education* : 
                     <select name="Education">
                         <option value="0" selected diabled >Select</option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                        <option value="Pre Matric">Pre Matric</option>
+                        <option value="Post Matric">Post Matric</option>
+                        <option value="Graduate">Graduate</option>
                         <option value="others">others</option>
                     </select>
                 </li>
@@ -678,8 +678,8 @@
                 <!-- <li>H.No : <input type="text" name="H.No" placeholder="" required></li> -->
                 <li>Purpose of stay* : <textarea name="Purpose_of_stay"  cols="30" rows="10" required></textarea></li>
                 <li>Need for labour : <textarea name="Need_for_labour" cols="30" rows="10"></textarea></li>
-                <li>Regd.No. (in case of Workshop/Industries, etc.) : <input type="text" name="Regd_No" placeholder="" required></li>
-                <li>L.S.C No. (in case of Construction works) : <input type="text" name="LSC_No" placeholder="" required></li>
+                <li>Regd.No. (in case of Workshop/Industries, etc.) : <input type="text" name="Regd_No" placeholder="" ></li>
+                <li>L.S.C No. (in case of Construction works) : <input type="text" name="LSC_No" placeholder="" ></li>
                 <li>Skilled_SemiSkilled_Unskilled :
                     <select name="Skilled_SemiSkilled_Unskilled" >
                         <option value="0"selected disabled>Select</option>
@@ -699,7 +699,7 @@
                     <br> Provisional Pass No: <input type="file" name="doc2" >    
                 </fieldset>
                 
-                Remarks* : <textarea name="Remark" id="Remark" cols="30" rows="10" required></textarea>
+                Remarks* : <textarea name="Remark" id="Remark" cols="30" rows="10"></textarea>
         </div>
 
         <p id="checkbox">

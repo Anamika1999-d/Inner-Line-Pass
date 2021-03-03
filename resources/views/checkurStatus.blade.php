@@ -69,10 +69,11 @@
        <br>
        <p>Inner Line pass certificate</p>
        @if($data->ILP_Downloaded=="downloaded")
-       
        <button class="btn btn-outline-success" disabled> Download</button>
-       @else
-       <button class="btn btn-outline-success"><a href="/ilp/{{$data->id}}"> Download</a></button>
+       @elseif($data->Remarks_from_Officer=="NULL")
+       <button class="btn btn-outline-success" disabled> Download</button>
+       @elseif($data->Remarks_from_Officer=="Accepted")
+       <button class="btn btn-outline-success"><a href="/ilp1/{{$data->id}}"> Download</a></button>
        @endif
    </div>
    <div class="details">

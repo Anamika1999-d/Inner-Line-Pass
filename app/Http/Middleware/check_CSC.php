@@ -18,6 +18,7 @@ class check_CSC
         if(Auth::check() && Auth::user()->isDesignation()=='Kiosk Operator'){
             return $next($request);
         }
+        
         return response('404: Page not found');
     }
 }

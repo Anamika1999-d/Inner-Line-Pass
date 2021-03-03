@@ -86,7 +86,7 @@ input{
     background-color: rgb(238, 238, 238);
     width: 45%;
 }
-input#check{
+input #check{
     margin: 0;
     padding: 0;
 }
